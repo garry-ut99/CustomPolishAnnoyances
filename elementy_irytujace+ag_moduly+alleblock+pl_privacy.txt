@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-! Title: http://localhost/sub/elementy_irytujace+ag_moduly+alleblock+pl_privacy.txt
+! Title: elementy_irytujace+ag_moduly+alleblock+pl_privacy.txt
 ! Polish Annoyance Filters - Pop-ups
 ! Codename: Polskie Filtry Elementów Irytujących & AdGuard moduły + Alleblock + Polish Privacy
 ! Description: Polskie Filtry Elementów Irytujących & AdGuard moduły + Alleblock + Polish Privacy
