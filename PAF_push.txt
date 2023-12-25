@@ -3,8 +3,8 @@
 ! Polish Annoyance Filters - Web Push Notifications
 ! Codename: Web Push
 ! Description: Filtry ukrywające i blokujące powiadomienia web push.
-! Last modified: Sun, 02 Jul 2023, 14:29 UTC+02:00
-! Version: 2023.7.2.0
+! Last modified: Sun, 17 Dec 2023, 21:13 UTC+01:00
+! Version: 2023.12.17.0
 ! Expires: 3 days
 ! Najnowsza wersja zawsze na: https://github.com/FiltersHeroes/PolishAnnoyanceFilters
 ! Zgłoszenia:
@@ -13,34 +13,36 @@
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/deed)
 ! Homepage: https://polishannoyancefilters.netlify.app
 ! Maintainer: Filters Heroes
-! Aktualizacja: nie, 02 lip 2023, 14:29 UTC+02:00
+! Aktualizacja: nie, 17 gru 2023, 21:13 UTC+01:00
 !
 !
 !
 ! Specyficzne filtry
 */pushServiceWorker.js$script,domain=go.tvn24.pl|player.pl|topagrar.pl|tvn.pl|~www.tvn.pl
+/batchsdk-worker-loader.js$script,domain=eurosport.tvn24.pl
+/firebase-messaging-sw.js$script,domain=rp.pl
 /firebase-push.js$domain=cafago.com|tomtop.com
 /firebase/firebase-messaging.js$script,domain=kobieceinspiracje.pl
 /firebase/subscribe.js$domain=czesciauto24.pl
+/firebasejs/*/firebase*.js$script,third-party,domain=cdax.pl|dobreprogramy.pl|fotka.com|ktomalek.pl|newsblog.pl|pl.dreamstime.com|player.pl|punkt.media|tvn.pl|www.onet.pl|~www.tvn.pl|zapytaj.onet.pl
+/firebasejs/*/firebase-app.js$script,domain=parkiet.com
 /javascript/notifi.min.js$domain=antyradio.pl|chillizet.pl|planeta.fm|planeta.pl|radiozet.pl
+/push-notifications/*firebase-config.json$xmlhttprequest,domain=mojeppk.pl
 /rmf-push.js$script,domain=rmf.fm|rmf24.pl|rmfclassic.pl|rmfmaxxx.pl|rmfon.pl
-/rtom-proxy/rtom/web-push/*$xhr,domain=www.brw.pl
+/rtom-proxy/rtom/web-push/*$xhr,domain=brw.pl
 /snr-sw.js$script,domain=mediaexpert.pl|pl.kruk.eu
 /sw-push.js$script,domain=m.zapytaj.onet.pl|medonet.pl
 /sw-rmf-push.js$script,domain=rmf.fm|rmf24.pl|rmfclassic.pl|rmfmaxxx.pl|rmfon.pl
-/sw.js$domain=adaware.com|kinoseans.pl|mojwzrok.pl|openload.co|optes.pl|podaj.to|taniesoczewki.pl|youtube.com|zippyshare.com
+/sw.js$domain=adaware.com|kinoseans.pl|mojwzrok.pl|openload.co|optes.pl|podaj.to|taniesoczewki.pl
+@@/sw.js$domain=youtube.com
 ||cdn.*.com/push_app.js$script,domain=2conv.com|flv2mp3.by|flvto.biz
 ||cdn.foxpush.net/sdk/foxpush_SDK_min.js$domain=media4web.pl
 ||cdn.qgraph.io/v3/r/qgraph.v2.js$domain=domodi.pl|homebook.pl
 ||cdn.siteswithcontent.com/js/push/subscribe.js$script,domain=postimages.org|postimg.cc
 ||cdn.subscribers.com/assets/subscribers-sw.js$script,domain=badzjeszczelepszy.pl
 ||chamsko.pl/js/push-notifications.js
-||eurosport.tvn24.pl/batchsdk-worker-loader.js$script,domain=eurosport.tvn24.pl
-||gstatic.com/firebasejs/*/firebase*.js$script,domain=cdax.pl|dobreprogramy.pl|fotka.com|ktomalek.pl|newsblog.pl|pl.dreamstime.com|player.pl|punkt.media|tvn.pl|www.onet.pl|~www.tvn.pl|zapytaj.onet.pl
-||gstatic.com/firebasejs/*/firebase-app.js$script,domain=parkiet.com
 ||konin24.info/tmpl/js/push.min.js
 ||meczlive.pl/webpush.js$script
-||mojeppk.pl/*/push-notifications/*firebase-config.json$xmlhttprequest,domain=mojeppk.pl
 ||ocdn.eu/ucs/static/*/build/js/pushModule.js$script,domain=auto-swiat.pl|businessinsider.com.pl|fakt.pl|komputerswiat.pl|medonet.pl|noizz.pl|onet.pl|plejada.pl|vod.pl
 ||onet.pl/push-mob-service-worker*.js$script,domain=onet.pl
 ||onet.pl/push-service-worker*.js$script,domain=onet.pl
@@ -48,9 +50,6 @@
 ||rankomat.pl/kalkulator/client_app/assets/push-notifications/push-notifications.script.js
 ||redditstatic.com/*/PushNotifications.
 ||rzetelnafirma.pl/Scripts/pushServiceWorker$script
-||salesmanago.*/api/push/$xmlhttprequest
-||salesmanago.*/api/push/notification/consent/content.html$subdocument
-||savecart.pl/*/script.php
 ||tauron.pl/pushAd/integration.js
 ||twojcel.to/?smpushprofile
 ||web.webpushs.com/js/push/$script,domain=wiencewiazanki.pl
@@ -58,14 +57,15 @@
 ||webpush.interia.pl/scripts/*/push.js
 ||wides.pl/themes/default/js/notify.js
 2conv.com,flv2mp3.by,flvto.biz##.push-offer
-agrarsklep.pl,elle.pl,esklep.polomarket.pl,glamour.pl,kobieta.pl,mojegotowanie.pl,mojpieknyogrod.pl,morizon.pl,national-geographic.pl,przyslijprzepis.pl,wsb.edu.pl###ue_popups
 allani.pl,domodi.pl##div[id*="FakePromptContainer"]
 andzela.com##.kb-cs-notify-container
 at-outlet.pl###WebPushAddSubscription
+aurum-optics.pl,panwybierak.pl###yl__prompt, .yl__prompt
 autocentrum.pl##.web-push-box
+bandi.pl,pakolorente.com,quiosque.pl,termedia.pl,toys4boys.pl,wrp.pl,znak.com.pl##.gr-visual-prompt
 best.aliexpress.com,pl.aliexpress.com#?#body > div ~ script ~ div:nth-last-of-type(-n+3):nth-last-child(-n+3) > div:first-child:-abp-has(div:-abp-contains(Zezwalaj na powiadomienia))
 bnpparibas.pl,eneba.com,estyl.pl,semahead.pl###ue_push_dialog
-boardpc.pl,forum.dobreprogramy.pl,forum.manjaro.pl,hub.filterlists.com##.alert-info.alert.consent_banner
+boardpc.pl,forum.dobreprogramy.pl,forum.manjaro.pl##.alert-info.alert.consent_banner
 boop.pl###smart_push_smio_window
 businessinsider.com.pl###pushDefaultPopUp
 businessinsider.com.pl,noizz.pl##.pushBell
@@ -73,7 +73,9 @@ ceneo.pl###notifications-toast
 chillizet.pl,radiozet.pl,~www.radiozet.pl##.btn-notif
 codziennypoznan.pl,ipolska24.pl##.perfecty-push-dialog-box
 ding.pl#?#button[class] ~ div[class*="_"][style*="transition"][style*="opacity"][style*="margin"]:-abp-has(span:-abp-contains(/^Powiadomienia$/))
-eurosport.tvn24.pl###batchsdk-ui-banner
+dobredrzwi.pl,klasycznebuty.pl,nagaba.pl###yl__prompt-container, .yl__prompt-container
+eurosport.tvn24.pl,lidl.pl,wamiz.pl###batchsdk-ui-alert-container
+eurosport.tvn24.pl,lidl.pl,wamiz.pl###batchsdk-ui-banner
 folk24.pl###pushFooter
 gazetkonosz.pl##.floating-dialog
 homebook.pl###qgraphFakePromptContainer
@@ -106,14 +108,12 @@ tunelefoliowe.eu##.wce_has-label.wce_popup-consolidator-trigger
 tvn24.pl##.__ipPerunElement[style*="position"]
 tygodniowa.pl##iframe[style*="fixed"]:not([src])
 um.gorzow.pl,wielen.pl,wronki.pl###js__webpushBell
-wamiz.pl###batchsdk-ui-alert-container
 wazcar.pl###push-notification-button
 wnp.pl##amp-web-push-widget
 zapytaj.onet.pl##.push-notification-box
 zdrowie.pap.pl##section ~ span[onclick="window.scrollTo(0, 0);"]
 zegarkiipasja.pl##.fcx-push-bubble-container
 zegarkiipasja.pl##.fcx-push-modal-container
-znak.com.pl##.gr-visual-prompt
 !
 !
 ! Ogólne filtry
@@ -136,6 +136,9 @@ znak.com.pl##.gr-visual-prompt
 ||pushcrew.com^$script,third-party
 ||pushengage.com/script.js
 ||pushpushgo.com/scripts*/push.js$third-party
+||salesmanago.*/api/push/$xmlhttprequest
+||salesmanago.*/api/push/notification/consent/content.html$subdocument
+||savecart.pl/*/script.php
 ~pl###edrone_push--bubble:lang(pl), #edrone--push--alert--box:lang(pl)
 pl###edrone_push--bubble, #edrone--push--alert--box
 pl###onesignal-bell-container
