@@ -1,10 +1,8 @@
 [Adblock Plus 2.0]
-! Title: elementy_irytujace+ag_moduly+alleblock+pl_privacy.txt
-! Polish Annoyance Filters - Pop-ups
-! Codename: Polskie Filtry Elementów Irytujących & AdGuard moduły + Alleblock + Polish Privacy
-! Description: Polskie Filtry Elementów Irytujących & AdGuard moduły + Alleblock + Polish Privacy
-! Last modified: Sun, 24 Oct 2021, 21:23 UTC+02
-! Version: 2021.10.24.1
+! Title: Custom Polish Annoyances
+! Description: Polskie Filtry Elementów Irytujących + Polish Privacy
+! Last modified: Sun, 25 Dec 2023, 18:43 UTC+02
+! Version: 2023.12.24.1
 ! Expires: 2 days
 ! Najnowsza wersja zawsze na: https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters
 ! Zgłoszenia:
@@ -12,12 +10,9 @@
 !   GitHub => https://github.com/PolishFiltersTeam/PolishAnnoyanceFilters/issues
 ! License: CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/deed)
 ! Maintainer: Filters Heroes
-! Aktualizacja: so, 31 gru 2022, 10:23 UTC+02
+! Aktualizacja: pon, 25 gru 2023, 19:00 UTC+02
 
 !#include adblock.txt
-!#include alleblock.txt
-!#include popups.txt
-!#include push-notifications.txt
 !#include PAF_backgrounds_self-advertising.txt
 !#include PAF_contact_feedback_widgets.txt
 !#include PAF_newsletters.txt
