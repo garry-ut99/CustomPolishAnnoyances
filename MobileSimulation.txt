@@ -1,6 +1,6 @@
 [Adblock Plus 2.0]
 ! Title:  Mobile Simulation
-! Description: To be enabled when in Mobile Simulation mode
+! Description: To be enabled when in Mobile Simulation mode because uBO's can't read Mobile Simulation mode's user-agent string
 ! Last modified: Thu, 25 Jan 2024, 15:06 UTC+02
 ! Version: 2024.01.25.1
 ! Expires: 2 days
