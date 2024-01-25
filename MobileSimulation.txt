@@ -1,6 +1,7 @@
 [Adblock Plus 2.0]
 ! Title:  Mobile Simulation
-! Description: To be enabled when in browser's Mobile Simulation mode because uBO can't read Mobile Simulation mode's user-agent string, thus it thinks it's on Desktop
+! Description: To be enabled when in browser's Mobile Simulation mode if I'm too lazy to use the mobile switch : 
+! https://github.com/uBlockOrigin/uBlock-issues/issues/183#issuecomment-1478381830
 ! Last modified: Thu, 25 Jan 2024, 15:06 UTC+02
 ! Version: 2024.01.25.1
 ! Expires: 2 days
